@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.main .image {
+  position: absolute;
+  left: 10%;
+  height: 90%;
+  width: 40%;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.main.signup .image {
+  left: 50%;
+}
+.main .image img {
+  height: 100%;
+  width: 100%;
+}
+.main .left {
+  width: 35%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.main .left img,
+.main .right img {
+  height: 100%;
+  width: 100%;
+}
+.main .right {
+  width: 35%;
+  height: 100%;
+  visibility: visible;
+}
+.main .right .right-login,
+.left-signup {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+.main .right .right-login > *,
+.left-signup > * {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main .right .right-login form {
+  overflow-x: hidden;
+}
+.main .right .right-login form > *,
+.left-signup form > * {
+  display: block;
+  width: 100%;
+}
+.main .right .right-login form label,
+.left-signup form label {
+  font-weight: 500;
+}
+.main .right .right-login form input,
+.left-signup form input {
+  padding-left: 15px;
+  height: 45px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid grey;
+}
+.main .right .right-login form input.btn,
+.left-signup form input.btn {
+  padding: 0;
+  color: #fff;
+  margin: 25px 0;
+  border: none;
+}
+.main .right .right-login form input.login,
+.left-signup form input.btn {
+  background: #a04625;
+}
+.main .right .right-login form input.linkedin,
+.left-signup form input.linkedin {
+  background: #0d64c2;
+}
+.main .right .right-login form h5,
+.left-signup form h5 {
+  display: flex; 
+  flex-direction: row; 
+}
+.main .right .right-login form h5::before,
+.left-signup form h5::before {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto 5px;
+}
+.main .right .right-login form h5::after,
+.left-signup form h5::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto 5px;
+}
+.main .right .right-login .heading,
+.left-signup .heading {
+  font-size: 30px;
+}
+.main .right .right-login a,
+.left-signup a {
+  margin-top: 50px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>LogIn / SignUp</title>
+</head>
+
+<body>
+    <div class="main login" id="main">
+        <div class="image" id="image">
+            <img id="img" src="./Assets/login.jpg" alt="" srcset="">
+        </div>
+        <div class="left" id="left">
+            <div class="left-signup" id="left-signup">
+                <div class="heading">Sign up</div>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+                    <label for="email2">Email</label>
+                    <input type="email" name="email" id="email2" placeholder="Enter your email address">
+                    <label for="password2">Password</label>
+                    <input type="password" name="password" id="password2" placeholder="Enter your password">
+                    <input class="btn login" type="submit" value="Sign up">
+                </form>
+                <a href="#" onclick="moveToLogIn(event)">Already have an account? - Login into your account</a>
+            </div>
+        </div>
+        <div class="right" id="right">
+            <div class="right-login">
+                <div class="heading">Log in</div>
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <input class="btn login" type="submit" value="Log in">
+                    <h5>Or</h5>
+                    <input class="btn linkedin" type="button" value="Continue with LinkedIn">
+                </form>
+                <a href="#" onclick="moveToSignUp(event)">Can't log in? - Sign up for an account</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
